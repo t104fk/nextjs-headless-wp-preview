@@ -1,0 +1,29 @@
+version: '3.1'
+
+services:
+
+  wordpress:
+    build: .
+    restart: always
+    ports:
+      - 8088:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: user
+      WORDPRESS_DB_PASSWORD: passwd
+      WORDPRESS_DB_NAME: wpdb
+
+  db:
+    image: mysql:5.7
+    restart: always
+    ports:
+      - 13306:3306
+    environment:
+      MYSQL_DATABASE: wpdb
+      MYSQL_USER: user
+      MYSQL_PASSWORD: passwd
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - db:/var/lib/mysql
+volumes:
+  db:

@@ -1,0 +1,6 @@
+schema: ${GRAPHQL_ENDPOINT}
+generates:
+  ./@types/wordpress.ts:
+    plugins:
+      - typescript
+      - typescript-operations

@@ -1,0 +1,3 @@
+export const WP_AUTH_REFRESH_TOKEN = process.env.WORDPRESS_AUTH_REFRESH_TOKEN;
+export const GRAPHQL_ENDPOINT = process.env.GRAPHQL_ENDPOINT;
+export const WORDPRESS_PREVIEW_SECRET = process.env.WP_PREVIEW_SECRET_KEY;

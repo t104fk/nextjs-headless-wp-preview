@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "codegen": "GRAPHQL_ENDPOINT=http://localhost:8088/graphql graphql-codegen",
+    "build": "next build",
+    "start": "next start",
+    "type-check": "tsc"
+  },
+  "dependencies": {
+    "graphql": "^16.6.0",
+    "graphql-request": "^5.0.0",
+    "next": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.13.8",
+    "@graphql-codegen/typescript": "^2.8.0",
+    "@graphql-codegen/typescript-operations": "^2.5.5",
+    "@types/node": "^12.12.21",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "typescript": "^4.8.3"
+  }
+}
