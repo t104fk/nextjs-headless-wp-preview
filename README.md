@@ -21,3 +21,12 @@ login and get refresh_token
 ```sh
 yarn codegen
 ```
+
+Launch
+
+```sh
+yarn dev
+```
+
+Try Preview
+![Preview](./docs/preview_button.jpg)
